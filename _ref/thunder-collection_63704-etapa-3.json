@@ -1,0 +1,128 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "63704-etapa-3",
+    "dateExported": "2023-10-27T13:34:58.376Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "09cd3e0a-8cb5-4a8c-8f89-0b829ca5ed3c",
+            "colId": "67bc62e1-4406-4c35-bfdc-c5e4d92ac903",
+            "containerId": "",
+            "name": "Obtener todos los productos",
+            "url": "http://localhost:8080/api/productos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-20T15:36:57.290Z",
+            "modified": "2023-10-20T15:36:57.290Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4cb4f886-42f5-4335-8c0f-d7745206068f",
+            "colId": "67bc62e1-4406-4c35-bfdc-c5e4d92ac903",
+            "containerId": "",
+            "name": "Obtener un producto por ID",
+            "url": "http://localhost:8080/api/productos/6539207010931c7c9781cf23",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-20T15:37:43.900Z",
+            "modified": "2023-10-25T14:14:45.831Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d11214ea-9e2d-48b2-80c4-05e5f35eb08e",
+            "colId": "67bc62e1-4406-4c35-bfdc-c5e4d92ac903",
+            "containerId": "",
+            "name": "Creación de un producto",
+            "url": "http://localhost:8080/api/productos/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-20T15:38:33.734Z",
+            "modified": "2023-10-25T15:13:40.787Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\t\"nombre\": \"Producto DD\",\n\t\t\"precio\": 4453.00,\n\t\t\"stock\": 10,\n\t\t\"marca\": \"Marca DD\",\n\t\t\"categoria\": \"Categoria DD\",\n\t\t\"detalles\": \"Detalle DD\",\n\t\t\"foto\": \"fotoDD.jpg\",\n\t\t\"envio\": false\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c93b2378-82db-4b4a-b883-1491c7879bcd",
+            "colId": "67bc62e1-4406-4c35-bfdc-c5e4d92ac903",
+            "containerId": "",
+            "name": "Actualizar producto",
+            "url": "http://localhost:8080/api/productos/6539207010931c7c9781cf23",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-10-20T15:42:03.086Z",
+            "modified": "2023-10-25T15:10:19.068Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\t\"nombre\": \"Producto AA Editado\",\n\t\t\"precio\": 1234.00,\n\t\t\"stock\": 1,\n\t\t\"marca\": \"Marca AA Editado\",\n\t\t\"categoria\": \"Categoria AA Editado\",\n\t\t\"detalles\": \"Detalle  AA Editado\",\n\t\t\"foto\": \"fotoAA.jpg\",\n\t\t\"envio\": true\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cd7c7a81-3327-43c9-8216-e15432375a02",
+            "colId": "67bc62e1-4406-4c35-bfdc-c5e4d92ac903",
+            "containerId": "",
+            "name": "Borrando un producto",
+            "url": "http://localhost:8080/api/productos/6539206310931c7c9781cf22",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-10-20T15:42:35.469Z",
+            "modified": "2023-10-25T14:57:16.014Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f6b054d7-5eb8-4594-93fa-07d39d5080ac",
+            "colId": "67bc62e1-4406-4c35-bfdc-c5e4d92ac903",
+            "containerId": "",
+            "name": "Carga de imagen",
+            "url": "http://localhost:8080/api/upload",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-10-25T15:21:25.046Z",
+            "modified": "2023-10-25T15:52:11.627Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "d:\\_courses\\63704.bootcamp.fullstack\\clase-61\\bc63704-integrador-etapa-3\\ryunosuke-kikuno-kuQE-5nqbQ8-unsplash.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d0a0ae3b-2a98-48c1-b1df-9aab6a203fe1",
+            "colId": "67bc62e1-4406-4c35-bfdc-c5e4d92ac903",
+            "containerId": "",
+            "name": "Guardar Carrito",
+            "url": "http://localhost:8080/api/carrito",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-10-27T13:34:05.666Z",
+            "modified": "2023-10-27T13:34:27.738Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
